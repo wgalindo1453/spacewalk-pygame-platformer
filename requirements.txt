@@ -1,0 +1,5 @@
+# Standard library dependencies, no need to list these in requirements.txt
+# import time
+
+# Third-party libraries
+pygame==2.0.1
