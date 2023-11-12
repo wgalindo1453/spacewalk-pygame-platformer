@@ -1,0 +1,20 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          spacewalk
+# Required-Start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Your Pygame project description
+# Description:       Your Pygame project description
+### END INIT INFO
+
+NAME=spacewalk
+DESC="Your Pygame project description"
+DAEMON=/usr/bin/$NAME
+PIDFILE=/var/run/$NAME.pid
+
+do_start()
+{
+    start-stop-daemon --start --background --pidfile $PID

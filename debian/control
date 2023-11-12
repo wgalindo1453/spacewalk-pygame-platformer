@@ -1,0 +1,10 @@
+Source: spacewalk
+Section: games
+Priority: optional
+Maintainer: William galindo.tech@gmail.com
+Build-Depends: debhelper (>= 9), python3-all, python3-setuptools, python3-pygame
+
+Package: spacewalk
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}, python3-pygame
+Description: Spacewalk is a 2D platformer game created in pure python using pygame, where you play as a space explorer who has landed on an unknown planet. Your goal is to explore the planet, collect power-ups, and avoid obstacles and enemies.
